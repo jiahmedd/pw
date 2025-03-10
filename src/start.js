@@ -91,7 +91,8 @@ const Home = () => {
             <div className = "history">
               <h2>Education</h2>
               <p style={{ fontSize: '1.25rem' }}>George Mason University</p>
-              <p>Bachelors of Science, Computer Science</p> 
+              <p>Bachelors of Science, Computer Science</p>
+              <p>GPA: 3.0/4.0</p> 
               <i>August 2022 - December 2024</i>
               <div className="education-buttons">
               <div className="button-container">
@@ -133,6 +134,7 @@ const Home = () => {
             </div>
               <p style={{ fontSize: '1.25rem' }}>Northern Virginia Community College</p> 
               <p>Associates of Science, Engineering</p>
+              <p>GPA: 3.34/4.0</p>
               <i>August 2020 - May 2022</i>
             </div>
             </div>
