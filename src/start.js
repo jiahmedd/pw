@@ -71,7 +71,7 @@ const Home = () => {
       </div>
 
       {/* About Me Section */}
-      <div ref={aboutRef} className="section" style={{  marginLeft: '100px', fontFamily: 'Space mono', }}>
+      <div ref={aboutRef} className="section" style={{  marginLeft: '100px', marginRight: '100px', fontFamily: 'Space mono', }}>
         <h1>About Me</h1>
         <div className="about-me-section">
           {/* Left Container */}
@@ -79,10 +79,10 @@ const Home = () => {
             {/*About Me Summary */}
             <div className="about-me-text">
               <p style={{ fontSize: '1.5rem',  }}>
-                Hi, there, My name is Jihan and I am a recent college graduate from George Mason University!
+                Hi there! My name is Jihan, and I am a recent graduate of George Mason University.
               </p>
               <p style={{ fontSize: '1.5rem', marginBottom: '10vh', }}>
-               I love technology and thrive on using it to create an impact; I hope to use technology to bring positive changes to both communities and tech spaces!
+              I love technology and thrive on using it to create an impact. I hope to leverage technology to bring positive change to both communities and tech spaces!
               </p>
             </div> 
             
