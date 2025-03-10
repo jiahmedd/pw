@@ -182,11 +182,11 @@ const Home = () => {
   <div className="projects-container"  >
     {/* ANDROID Jewelry Management System Project */}
     <div className="project">
-      <img src="/jewelry-database.png" alt="Jewelry Database App" />
+      <img src="jewelry-database.png" alt="Jewelry Database App" />
       <p>Android: Jewelry Store Management App</p>
       <div className= "lang">
-        <img src= "/android-studio-logo.svg" style={{height: '20px'}}/>
-        <img src= "/java.svg"/>
+        <img src= "android-studio-logo.svg" style={{height: '20px'}}/>
+        <img src= "java.svg"/>
       </div>
       <div className = "buttons">
       <button 
@@ -203,11 +203,11 @@ const Home = () => {
 
     {/* ANDROID To-do List */}
     <div className="project">
-      <img src="/to-do.png" alt="To-Do List App" />
+      <img src="to-do.png" alt="To-Do List App" />
       <p>Android: To-Do List</p>
       <div className= "lang">
-        <img src= "/android-studio-logo.svg" style={{height: '20px'}}/>
-        <img src= "/java.svg"/>
+        <img src= "android-studio-logo.svg" style={{height: '20px'}}/>
+        <img src= "java.svg"/>
       </div>
       <div className = "buttons">
       <button 
@@ -227,8 +227,8 @@ const Home = () => {
     <img src = "/poodle.png" /> 
     <p> "Poodle" Google Search </p>
     <div className= "lang">
-        <img src= "/html-1.svg"/>
-        <img src= "/css-3.svg"/>
+        <img src= "html-1.svg"/>
+        <img src= "css-3.svg"/>
       </div>
     <button 
       className="github-link"
@@ -242,11 +242,11 @@ const Home = () => {
       <img src = "/plutus.png" />
       <p> Plutus Budget App </p>
       <div className = "lang"> 
-        <img src = "/react-2.svg"/>
-        <img src= "/html-1.svg"/>
-        <img src= "/css-3.svg"/>
+        <img src = "react-2.svg"/>
+        <img src= "html-1.svg"/>
+        <img src= "css-3.svg"/>
         <img src= "javascript-1.svg" />
-        <img src = "/mongodb-icon-1.svg" />
+        <img src = "mongodb-icon-1.svg" />
       </div>
       <button 
       className="github-link"
@@ -262,22 +262,22 @@ const Home = () => {
       <h1>SKILLS</h1>
       <div className = "technical-languages">
         <h3>Technical Languages</h3>
-        <img src= "/sql-database-generic-svgrepo-com.svg" style = {{height: '10vh', marginRight: '10vh'}}/>
-        <img src= "/java-4.svg" style = {{height: '10vh', marginRight: '10vh'}}></img>
-        <img src= "/python-5.svg" style ={{height: '10vh', marginRight: '10vh'}}></img>
-        <img src= "/c-1.svg" style={{height: '10vh', marginRight: '10vh'}}></img>
-        <img src= "/html-1.svg" style={{height: '10vh', marginRight: '10vh'}}/>
-        <img src= "/css-3.svg" style={{height: '10vh', marginRight: '10vh'}}/>
+        <img src= "sql-database-generic-svgrepo-com.svg" style = {{height: '10vh', marginRight: '10vh'}}/>
+        <img src= "java-4.svg" style = {{height: '10vh', marginRight: '10vh'}}></img>
+        <img src= "python-5.svg" style ={{height: '10vh', marginRight: '10vh'}}></img>
+        <img src= "c-1.svg" style={{height: '10vh', marginRight: '10vh'}}></img>
+        <img src= "html-1.svg" style={{height: '10vh', marginRight: '10vh'}}/>
+        <img src= "css-3.svg" style={{height: '10vh', marginRight: '10vh'}}/>
         <img src= "javascript-1.svg" style={{height: '10vh', marginRight: '10vh'}}/>
       </div>
       <div className = "frameworks-tools">
         <h3>Technical Frameworks & Tools </h3>
-        <img src = "/react-2.svg" style = {{height: '10vh', marginRight: '10vh'}}/>
-        <img src = "/aws-2.svg" style = {{height: '10vh', marginRight: '10vh'}}/>
-        <img src = "/nodejs-1.svg" style = {{height: '10vh', marginRight: '10vh'}}/>
-        <img src = "/mongodb-icon-1.svg" style = {{height: '10vh', marginRight: '10vh'}}/>
-        <img src = "/git.svg" style = {{height: '10vh', marginRight: '10vh'}}/>
-        <img src = "/figma-icon.svg" style = {{height: '10vh', marginRight: '10vh'}}/>
+        <img src = "react-2.svg" style = {{height: '10vh', marginRight: '10vh'}}/>
+        <img src = "aws-2.svg" style = {{height: '10vh', marginRight: '10vh'}}/>
+        <img src = "nodejs-1.svg" style = {{height: '10vh', marginRight: '10vh'}}/>
+        <img src = "mongodb-icon-1.svg" style = {{height: '10vh', marginRight: '10vh'}}/>
+        <img src = "git.svg" style = {{height: '10vh', marginRight: '10vh'}}/>
+        <img src = "figma-icon.svg" style = {{height: '10vh', marginRight: '10vh'}}/>
 
       </div>
     </div>
@@ -286,13 +286,13 @@ const Home = () => {
   <div ref={contactRef} className= "section" style={{margin: '100px', marginTop: '50vh', fontFamily: 'Space mono', display: 'flex', justifyContent:'center'}}>
     <div className = "contact-imgs"> 
       <a href = "https://github.com/jiahmedd?tab=repositories">
-        <img src = '/github-icon.svg' style = {{height: '5vh', marginRight: '10vh'}}></img>
+        <img src = 'github-icon.svg' style = {{height: '5vh', marginRight: '10vh'}}></img>
       </a>
       <a href = "https://www.linkedin.com/in/jihaniahmed/">
-        <img src = '/linkedin-icon-2.svg' style = {{height: '5vh', marginRight: '10vh'}}></img>
+        <img src = 'linkedin-icon-2.svg' style = {{height: '5vh', marginRight: '10vh'}}></img>
       </a>
       <a href = "mailto:jihanahmedd0@gmail.com">
-        <img src = '/email-1-svgrepo-com.svg' style = {{height: '5vh', marginRight: '10vh'}}></img>
+        <img src = 'email-1-svgrepo-com.svg' style = {{height: '5vh', marginRight: '10vh'}}></img>
       </a>
     </div>
 
