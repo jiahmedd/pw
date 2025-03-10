@@ -1,3 +1,11 @@
+html, body {
+  background-color: #f7f1e7; /* Your desired background color */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh; /* Ensures background fills entire page */
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +18,256 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.nav-bar {
+  display: flex; 
+  justify-content: flex-end; 
+}
+.main {
+  display: flex;
+  flex-direction: column; /* Stack sections vertically */
+  justify-content: flex-start; /* Aligns everything from the top */
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+/* Remove any fixed height for sections */
+.education, .projects-container {
+  width: 100%;
+  margin-top: 20px;
+}
+.about-button, .projects-button, .contact-button, .github-link, .skills-button{
+  padding: 10px 20px;
+  background-color: #E4DDDD;
+  font-weight: bold;
+  font-family: 'Space Mono', monospace;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 10px; 
+}
+
+.github-link {
+  margin-top: auto; 
+}
+
+.about-button:hover, .projects-button:hover {
+  background-color: #ddd;
+}
+
+.main, .about-section, .projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative; /* Ensures proper stacking */
+}
+
+.main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.image {
+  width: 200px; /* Add your image size here */
+}
+
+.name {
+  position: relative; /* Change from absolute */
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.my-name-text {
+  font-size: 10rem;
+  font-weight: normal;
+  font-family: 'Space Mono', monospace;
+  color: #827070;
+  padding: 0 20px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  width: 0; /* Start with no visible text */
+  animation: 
+    typing 3.5s steps(40, end) 1s forwards, /* Typing animation */
+    blink-caret .75s step-end infinite; /* Cursor blink */
+}
+
+/* Typing effect */
+@keyframes typing {
+  from {
+    width: 0; /* Initially the width is 0 */
+  }
+  to {
+    width: 100%; /* Gradually reveal the full width */
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { 
+    border-color: transparent; 
+  }
+  50% { 
+    border-color: rgb(57, 51, 51); 
+  }
+}
+
+
+/* Specific adjustments to prevent overflow in sections */
+.about-section h2, .about-section p {
+  margin: 10px 0; /* Space between elements */
+  word-wrap: break-word; /* Prevents long words from overflowing */
+}
+
+
+.education, .projects-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.education-buttons {
+  display: flex; 
+  margin-bottom: 10vh;
+}
+
+.Extracurriculars, .Leadership {
+  padding: 8px 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 40vh; 
+}
+.clubs-list {
+  position: absolute;
+  left: 0;
+  top: 100%; /* Position right under the button */
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  z-index: 10; /* Ensure it appears on top */
+}
+
+.clubs-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.clubs-list li {
+  padding: 5px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.content {
+  background: '#fff';
+  padding: 15px; 
+  border-radius: 5px; 
+  margin-left: 40px; 
+  width: 100%; 
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align from top */
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 100vh; /* Keep this if you want it to fill the screen */
+  overflow: auto; /* Allow scrolling if content overflows */
+  margin-bottom: 50px; /* Add margin to separate from projects */
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Always 3 boxes per row */
+  gap: 20px;
+  justify-content: center;
+  padding-top: 40px;
+  margin-top: 20px; /* Adjust margin to create space above */
+}
+
+/* Styling for individual projects */
+.project {
+  background-color: #fff;
+  box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: center;
+  min-height: 300px; /* Adjust height dynamically */
+}
+
+.project img {
+  border-radius: 16px;
+  max-width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+.lang {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.lang img {
+  height: 50px;
+  width: auto;
+}
+
+
+.github-link {
+  padding: 8px 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.github-link:hover {
+  background-color: #555;
+}
+
+.buttons {
+  display: flex; 
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr); /* Two boxes per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: repeat(1, 1fr); /* Single column layout on small screens */
+  }
 }
