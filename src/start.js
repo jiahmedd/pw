@@ -78,11 +78,11 @@ const Home = () => {
           <div className="left-container">
             {/*About Me Summary */}
             <div className="about-me-text">
-              <p style={{ fontSize: '1.5rem', width: '60%' }}>
-                
+              <p style={{ fontSize: '1.5rem',  }}>
+                Hi, there, My name is Jihan and I am a recent college graduate from George Mason University!
               </p>
-              <p style={{ fontSize: '1.5rem', width: '60%' }}>
-               
+              <p style={{ fontSize: '1.5rem', marginBottom: '10vh', }}>
+               I love technology and thrive on using it to create an impact; I hope to use technology to bring positive changes to both communities and tech spaces!
               </p>
             </div> 
             
@@ -90,9 +90,9 @@ const Home = () => {
             <div className = "education"> 
             <div className = "history">
               <h2>Education</h2>
-              <p>George Mason University</p>
-              <p style={{ fontSize: '1rem' }}>Bachelors of Science, Computer Science</p> 
-              <i style={{ fontSize: '1rem' }}>August 2022 - December 2024</i>
+              <p style={{ fontSize: '1.25rem' }}>George Mason University</p>
+              <p>Bachelors of Science, Computer Science</p> 
+              <i>August 2022 - December 2024</i>
               <div className="education-buttons">
               <div className="button-container">
                 <button
@@ -131,24 +131,44 @@ const Home = () => {
                 )}
               </div>
             </div>
-              <p>Northern Virginia Community College</p> 
-              <p style={{ fontSize: '1rem' }}>Associates of Science, Engineering</p>
-              <i style={{ fontSize: '1rem' }}>August 2020 - May 2022</i>
+              <p style={{ fontSize: '1.25rem' }}>Northern Virginia Community College</p> 
+              <p>Associates of Science, Engineering</p>
+              <i>August 2020 - May 2022</i>
             </div>
             </div>
             <div className = "experience">
               <h2>Experience</h2>
               <div className = "work-history"> 
                   <div className = "workItem">
-                    <p>Akira Technologies</p>
+                    <b>Akira Technologies</b>
                     <p>Washington, DC</p>
                     <p>Software Engineer Intern</p>
-                    <p>July 2024 - December 2024</p>
+                    <p>July 2024 - January 2025</p>
                   </div>
                   <div className = "workItem">
-                    <p>Fairfax County Public Schools</p>
+                    <b>Fairfax County Public Schools</b>
+                    <p>Falls Church, VA</p>
+                    <p>Substitute Teacher</p>
+                    <p>April 2024 - Present</p>
                   </div>
-                  
+                  <div className = "workItem">
+                    <b>American Express</b>
+                    <p>Phoenix, AZ</p>
+                    <p>Software Engineer Intern</p>
+                    <p>January 2023 - January 2023</p>
+                  </div>
+                  <div className = "workItem">
+                    <b>StemTree</b>
+                    <p>Vienna, VA</p>
+                    <p>Instuctor</p>
+                    <p>August 2022 - December 2022</p>
+                  </div>
+                  <div className = "workItem">
+                    <b>The Home Depot</b>
+                    <p>Fairfax, VA</p>
+                    <p>Pro Sales Associate</p>
+                    <p>March 2019 - Present</p>
+                  </div>
               </div>
             </div> 
           </div>
@@ -172,10 +192,10 @@ const Home = () => {
       onClick={() => window.open("https://github.com/jiahmedd/inventory-app", "_blank")}>
       GitHub
       </button>
-      <button
+      {/* <button
         className = "github-link">
         Download APK
-      </button>
+      </button> */}
       </div>
     </div>
 
@@ -193,10 +213,10 @@ const Home = () => {
       onClick={() => window.open("https://github.com/jiahmedd/Android-To-Do-List-", "_blank")}>
       GitHub
       </button>
-      <button
+      {/* <button
         className = "github-link">
         Download APK
-      </button>
+      </button> */}
       </div>
     </div>
 
@@ -261,11 +281,17 @@ const Home = () => {
     </div>
   </div>
 
-  <div ref={contactRef} className= "section" style={{margin: '100px', marginTop: '50vh', fontFamily: 'Space mono'}}>
+  <div ref={contactRef} className= "section" style={{margin: '100px', marginTop: '50vh', fontFamily: 'Space mono', display: 'flex', justifyContent:'center'}}>
     <div className = "contact-imgs"> 
-      <img src = '/github-icon.svg' style = {{height: '5vh', marginRight: '10vh'}}></img>
-      <img src = '/linkedin-icon-2.svg' style = {{height: '5vh', marginRight: '10vh'}}></img>
-      <img src = '/email-1-svgrepo-com.svg' style = {{height: '5vh', marginRight: '10vh'}}></img>
+      <a href = "https://github.com/jiahmedd?tab=repositories">
+        <img src = '/github-icon.svg' style = {{height: '5vh', marginRight: '10vh'}}></img>
+      </a>
+      <a href = "https://www.linkedin.com/in/jihaniahmed/">
+        <img src = '/linkedin-icon-2.svg' style = {{height: '5vh', marginRight: '10vh'}}></img>
+      </a>
+      <a href = "mailto:jihanahmedd0@gmail.com">
+        <img src = '/email-1-svgrepo-com.svg' style = {{height: '5vh', marginRight: '10vh'}}></img>
+      </a>
     </div>
 
   </div>

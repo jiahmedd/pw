@@ -25,19 +25,19 @@ code {
   display: flex; 
   justify-content: flex-end; 
 }
-.main {
-  display: flex;
-  flex-direction: column; /* Stack sections vertically */
-  justify-content: flex-start; /* Aligns everything from the top */
-  align-items: center;
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-}
+
 /* Remove any fixed height for sections */
 .education, .projects-container {
   width: 100%;
   margin-top: 20px;
+}
+
+.education h2, .experience h2 {
+  font-size: 2rem;
+}
+
+.history {
+  margin-bottom: 10vh;
 }
 .about-button, .projects-button, .contact-button, .github-link, .skills-button{
   padding: 10px 20px;
@@ -76,14 +76,18 @@ code {
   flex-direction: column;
   min-height: 100vh;
 }
-
+.section h1 { 
+  display: flex; 
+  justify-content: center;
+  font-size: 3rem;
+}
 
 .image {
   width: 200px; /* Add your image size here */
 }
 
 .name {
-  position: relative; /* Change from absolute */
+ 
   text-align: center;
   margin-top: 20px;
 }
@@ -94,45 +98,13 @@ code {
   font-weight: normal;
   font-family: 'Space Mono', monospace;
   color: #827070;
-  padding: 0 20px;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typewriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  width: 0; /* Start with no visible text */
-  animation: 
-    typing 3.5s steps(40, end) 1s forwards, /* Typing animation */
-    blink-caret .75s step-end infinite; /* Cursor blink */
 }
-
-/* Typing effect */
-@keyframes typing {
-  from {
-    width: 0; /* Initially the width is 0 */
-  }
-  to {
-    width: 100%; /* Gradually reveal the full width */
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { 
-    border-color: transparent; 
-  }
-  50% { 
-    border-color: rgb(57, 51, 51); 
-  }
-}
-
 
 /* Specific adjustments to prevent overflow in sections */
 .about-section h2, .about-section p {
   margin: 10px 0; /* Space between elements */
   word-wrap: break-word; /* Prevents long words from overflowing */
 }
-
 
 .education, .projects-container {
   width: 100%;
@@ -141,7 +113,10 @@ code {
 
 .education-buttons {
   display: flex; 
-  margin-bottom: 10vh;
+  gap: 5vh; 
+  flex-direction: column;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 .Extracurriculars, .Leadership {
@@ -197,6 +172,52 @@ code {
   overflow: auto; /* Allow scrolling if content overflows */
   margin-bottom: 50px; /* Add margin to separate from projects */
 }
+
+
+.work-history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+
+.work-history::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background-color: #5E5050;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+}
+
+.workItem {
+  display: flex;
+  flex-direction: column;
+
+  padding: 15px;
+  border-radius: 8px;
+  
+  margin: 20px 0;
+  width: 80%;
+  position: relative;
+}
+
+
+.workItem::before {
+  content: "";
+  position: absolute;
+  width: 49px;
+  height: 49px;
+  background-color: #776969;
+  border-radius: 50%;
+  left: -49px;
+  top: 10px;
+}
+
 
 .projects-container {
   display: grid;
